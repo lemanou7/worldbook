@@ -12,25 +12,32 @@
 </head>
 <body>
 
-    <nav>
-        <div class="nav-left">
-            <img class="logo" src="{% static 'images/logo.png'%}" alt="logo">
-            <ul>
-                <li><img class="" src="{% static 'images/notification.png'%}" alt="notification"></li>
-                <li><img class="" src="{% static 'images/inbox.png'%}" alt="notification"></li>
-                <li><img class="" src="{% static 'images/video.png'%}" alt="notification"></li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <div class="search-box">
-                <img src="{% static 'images/search.png'%}" >
-                <input type="text" placeholder="Search">
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <!------------- left-sidebar ------------------->
+        <div class="left-sidebar">
+            <div class="imp-link">
+                <a href="http://"><img src="{% static 'images/news.png'%}" alt="news">Latest News</a>
+                <a href="http://"><img src="{% static 'images/friends.png'%}" alt="friends">Friends</a>
+                <a href="http://"><img src="{% static 'images/group.png'%}" alt="group">Group</a>
+                <a href="http://"><img src="{% static 'images/marketplace.png'%}" alt="marketplace">Marketplace</a>
+                <a href="http://"><img src="{% static 'images/watch.png'%}" alt="watch">Watch</a>
+                <a href="http://">See More</a>
             </div>
-            <div class="nav-user-icon online">
-                <img src="{% static 'images/profile-pic.png'%}" alt="user-icon" >
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="http://"><img src="{% static 'images/shortcut-1.png'%}" alt="shortcut-1">Web Developers</a>
+                <a href="http://"><img src="{% static 'images/shortcut-2.png'%}" alt="shortcut-2">UX Design course</a>
+                <a href="http://"><img src="{% static 'images/shortcut-3.png'%}" alt="shortcut-3">Full Stack Development</a>
+                <a href="http://"><img src="{% static 'images/shortcut-4.png'%}" alt="shortcut-4">Web Ingineers</a>
             </div>
         </div>
-    </nav>
+        <!------------- main-container  ------------------->
+        <div class="main-container"></div>
+        <!------------- right-sidebar ------------------->
+        <div class="right-sidebar"></div>
+    </div>
     {% block content%}
         
 
