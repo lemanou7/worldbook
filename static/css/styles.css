@@ -182,7 +182,7 @@ nav {
 
 
 
-.sidebar-title h4{
+.right-sidebar h4{
     font-weight: 600;
     font-size: 16px;
 
@@ -232,4 +232,34 @@ nav {
     color: #fff;
     font-size: 10px;
     padding: 4px 0;
+}
+
+.right-sidebar-ads{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.online-user-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.online-user-list .online img{
+    width: 40px;
+    border-radius: 50%;
+} 
+
+.online-user-list .online{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* moving the green online circle from top to bottom */
+
+.online-user-list .online::after{
+    top: unset;
+    bottom: 5px;
 }
