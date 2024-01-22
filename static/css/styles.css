@@ -282,14 +282,16 @@ nav {
 
 }
 
+/* story circled image styling */
 .story img{
     position: absolute;
     width: 45px;
     border-radius: 50%;
     top: 10px;
     left: 10px;
-    border-radius: 5px solid #626262;
+    border: 5px solid #1876f2;
 }
+/* story circled image styling end */
 
 .story p{
     position: absolute;
