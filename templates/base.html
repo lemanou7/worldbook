@@ -15,125 +15,20 @@
     {% include 'navbar.html' %}
 
     <div class="container">
+
         <!------------- left-sidebar ------------------->
-        <div class="left-sidebar">
-            <div class="imp-link">
-                <a href="http://"><img src="{% static 'images/news.png'%}" alt="news">Latest News</a>
-                <a href="http://"><img src="{% static 'images/friends.png'%}" alt="friends">Friends</a>
-                <a href="http://"><img src="{% static 'images/group.png'%}" alt="group">Group</a>
-                <a href="http://"><img src="{% static 'images/marketplace.png'%}" alt="marketplace">Marketplace</a>
-                <a href="http://"><img src="{% static 'images/watch.png'%}" alt="watch">Watch</a>
-                <a href="http://">See More</a>
-            </div>
-            <div class="shortcut-links">
-                <p>Your Shortcuts</p>
-                <a href="http://"><img src="{% static 'images/shortcut-1.png'%}" alt="shortcut-1">Web Developers</a>
-                <a href="http://"><img src="{% static 'images/shortcut-2.png'%}" alt="shortcut-2">UX Design course</a>
-                <a href="http://"><img src="{% static 'images/shortcut-3.png'%}" alt="shortcut-3">Full Stack Development</a>
-                <a href="http://"><img src="{% static 'images/shortcut-4.png'%}" alt="shortcut-4">Web Ingineers</a>
-            </div>
-        </div>
-        <!------------- main-container  ------------------->
-        <div class="main-container">
-            <div class="story-gallery">
-                <div class="story story1">
-                    <img src="{% static 'images/upload.png'%}" alt="upload">
-                    <p>Post story</p>
-                </div>
-                <div class="story story2">
-                    <img src="{% static 'images/member-1.png'%}" alt="upload">
-                    <p>Allison</p>
-                </div>
-                <div class="story story3">
-                    <img src="{% static 'images/member-2.png'%}" alt="upload">
-                    <p>Jackson</p>
-                </div>
-                <div class="story story4">
-                    <img src="{% static 'images/member-3.png'%}" alt="upload">
-                    <p>Samona</p>
-                </div>
-                <div class="story story5">
-                    <img src="{% static 'images/member-4.png'%}" alt="upload">
-                    <p>John Doe</p>
-                </div>
-            </div>
 
+        {% include 'left_sidebar.html' %}
 
-
-
-        </div>
+        {% block content%}
+        
+        {% endblock %}
+        
         <!------------- right-sidebar ------------------->
-        
-        <div class="right-sidebar">
-            <div class="sidebar-title">
-                <h4>Events</h4>
-                <a href="http://">See All</a>
-            </div>
 
-            <div class="event">
-                <div class="left-event">
-                    <h3>18</h3>
-                    <span>March</span>
-                </div>
-                <div class="right-event">
-                    <h4>Social Media</h4>
-                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
-                    <a href="http://">More Info</a>
-                </div>
-            </div>
-            <div class="event">
-                <div class="left-event">
-                    <h3>30</h3>
-                    <span>July</span>
-                </div>
-                <div class="right-event">
-                    <h4>Digital Marketing</h4>
-                    <p><i class="fa-solid fa-location-dot"></i> Willson Tech Park</p>
-                    <a href="http://">More Info</a>
-                </div>
-            </div>
+        {% include 'right_sidebar.html' %}
 
-            <div class="sidebar-title">
-                <h4>Advertisements</h4>
-                <a href="http://">Close</a>
-            </div>
-            <img src="{% static 'images/advertisement.png'%}" alt="advertisement" class="right-sidebar-ads">
-
-            <div class="sidebar-title">
-                <h4>Conversation</h4>
-                <a href="http://">Hide Chat</a>
-            </div>
-
-            <div class="online-user-list">
-                <div class="online">
-                    <img src="{% static 'images/member-1.png'%}" alt="">
-                </div>
-                <p>Alison Mina</p>
-            </div>
-            
-            <div class="online-user-list">
-                <div class="online">
-                    <img src="{% static 'images/member-2.png'%}" alt="">
-                </div>
-                <p>Jackson Aston</p>
-            </div>
-            
-            <div class="online-user-list">
-                <div class="online">
-                    <img src="{% static 'images/member-3.png'%}" alt="">
-                </div>
-                <p>Samona Rose</p>
-            </div>
-            
-
-
-
-        </div>
-
-    </div>
-    {% block content%}
-        
-
-    {% endblock %}
+    </div>   
+    
 </body>
 </html>
