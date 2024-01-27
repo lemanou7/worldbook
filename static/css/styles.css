@@ -289,7 +289,7 @@ nav {
     border-radius: 50%;
     top: 10px;
     left: 10px;
-    border: 5px solid #1876f2;
+    border: 3px solid #1876f2;
 }
 /* story circled image styling end */
 
@@ -322,3 +322,11 @@ nav {
     background-image:linear-gradient(transparent,rgba(0,0,0,0.5)), url(/static/images/status-5.png);
 }
 
+.story.story1 img{
+    top: unset;
+    left: 50%;
+    bottom: 40px;
+    transform: translate(-50%);
+    border: 0;
+    width: 35px;
+}
