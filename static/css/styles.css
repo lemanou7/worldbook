@@ -494,6 +494,15 @@ nav {
     overflow: hidden;
     top: 108%;
     right: 5%;
+
+    /* hiding settings menu using javaScript */
+    max-height: 0;
+    transition: max-height 0.3s;
+}
+
+/* This class doesn't exist in the html file, it is just in the css only */
+.settings-menu-height{
+    max-height: 450px;
 }
 
 .user-profile a{
